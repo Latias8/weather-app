@@ -1,0 +1,50 @@
+.keyart, .keyart_layer {
+    height: 200px;
+}
+
+#parallax {
+    display: block;
+    position: fixed;
+}
+
+
+.keyart {
+    position: relative;
+    z-index: -1000;
+}
+
+.keyart_layer {
+    background-position: bottom center;
+    background-size: auto 200px;
+    background-repeat: repeat-x;
+    position: absolute;
+}
+
+.keyart_layer.parallax {
+    position: fixed;
+}
+#keyart-0 {
+    top: 80px;
+    left: 10vw;
+}
+
+#keyart-1 {
+    top: 300px;
+    left: 2vw;
+}
+#keyart-2 {
+    top: 999px;
+    right: 4vw;
+}
+#keyart-3 {
+    top: 900px;
+    left: 6vw;
+}
+#keyart-4 {
+    top: 630px;
+    right: 2vw;
+}
+#keyart-5 {
+    top: 369px;
+    right: 8vw;
+}
