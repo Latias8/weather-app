@@ -192,16 +192,61 @@ h2, label, p {
 }
 
 #c-but {
-    position: absolute;
+    position: fixed;
     left: 10px;
     padding: 20px 40px;
     font-size: 30px;
     border-radius: 16px;
     background-color: #a27bf1;
     transition: .3s;
+    max-width: 30vw;
+    top: 100px;
 }
 
 #c-but:hover {
     background-color: #3b2567;
     color: white;
+}
+
+#melody-btn {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: .2s;
+}
+
+#melody-btn:hover {
+    width: 60px;
+    height: 60px;
+}
+
+#melody-btn:hover > img {
+    width: 50px;
+    top: 4px;
+}
+
+#melody-btn > img {
+    position: relative;
+    width: 40px;
+    animation: subtleRotation 2s ease infinite;
+    animation-direction: alternate;
+    transition: .2s;
+    top: 0
+}
+
+@keyframes subtleRotation {
+    from {
+        transform:rotate(-10deg);
+    }
+    to {
+        transform:rotate(20deg);
+    }
 }

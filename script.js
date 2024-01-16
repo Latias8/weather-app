@@ -186,6 +186,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    let shown = false;
+
+    document.getElementById("melody-btn").addEventListener("click", () => {
+        if (shown === false) {
+            document.querySelector(".music-container").style.right = "20px";
+            shown = true;
+        } else {
+            document.querySelector(".music-container").style.right = "-400px";
+            shown = false;
+        }
+
+    })
+
 
 
 });
