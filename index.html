@@ -16,9 +16,14 @@
     <script src="./script.js"></script>
 </head>
 <body>
+    <div id="front-filter"></div>
     <div id="weather-container">
-        <h2>Your weather for today</h2>
+        <div id="weather-title">
+            <h2>Your weather for today</h2>
+        </div>
 
+        <div id="main-content">
+            <div id="scroll-content">
 
         <div class="bar">
             <div id="aarau" class="city"></div>
@@ -116,6 +121,21 @@
             </div>
         </div>
 
+        <div class='sep-bar'></div>
+
+        <div class="bar">
+            <div id="wald" class="city"></div>
+            <div class="weather-c">
+                <div class="weather-info"></div>
+                <div class='first-half'>
+                    <div class="temp-div"></div>
+                    <img class="weather-icon" alt="Weather Icon">
+                </div>
+                <div class="hourly-forecast"></div>
+            </div>
+        </div>
+            </div>
+    </div>
     </div>
 
     <div class="music-container" id="music-container">
