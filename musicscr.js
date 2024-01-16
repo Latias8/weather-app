@@ -148,7 +148,7 @@ function DurTime (e) {
     // change duration DOM
     durTime.innerHTML = min_d +':'+ sec_d;
 
-};
+}
 
 // Event listeners
 playBtn.addEventListener('click', () => {

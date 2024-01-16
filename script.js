@@ -161,6 +161,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     startSite();
+    let nineties = false;
+    let weatherElements = document.querySelectorAll('.weather-c');
+
+    document.getElementById("c-but").addEventListener("click", () => {
+        if (nineties === false) {
+            nineties = true;
+
+            weatherElements.forEach( (i) => {
+                i.style.cssText = 'text-shadow: 3px 2px 2px rgba(251, 12, 12, 5), 0px -1px 3px rgba(12, 79, 251, 4), -3px 0px 2px rgba(52, 251, 12, 5) !important; animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite !important;';
+                document.body.style.cssText = 'background: linear-gradient(to bottom, #8C52FF, #8C52FF 50%, #7c4bdc 50%, #7c4bdc) !important; background-size: 100% 4px !important;';
+
+            })
+        } else {
+            nineties = false;
+
+            weatherElements.forEach((i) => {
+                i.style.cssText = 'text-shadow: "" !important; animation: " !important";';
+                document.body.style.cssText = 'background: "#8C52FF" !important; background-size: "" !important; animation: "" !important;';
+            })
+            console.log('off')
+        }
+    });
+
 
 
 });

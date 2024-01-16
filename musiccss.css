@@ -14,6 +14,13 @@
     justify-content: center;
     right: 20px;
     top: 80px;
+    opacity: 50%;
+    transition: .2s;
+    backdrop-filter: blur(10px);
+}
+
+.music-container:hover {
+    opacity: 100%;
 }
 
 .img-container {
@@ -125,4 +132,13 @@
     height: 100%;
     width: 0;
     transition: width 0.1s linear;
+}
+
+.times {
+    display: flex;
+    flex-direction: row;
+}
+
+.times > div {
+    margin: 0 10px;
 }
