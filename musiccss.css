@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     right: -400px;
-    top: 150px;
+    top: 200px;
     opacity: 50%;
     transition: .2s;
     backdrop-filter: blur(10px);

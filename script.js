@@ -199,6 +199,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
 
+    document.querySelector(".col-sm-12").addEventListener("click", () => {
+        document.querySelector(".col-sm-12").style.opacity = "0";
+        document.querySelector(".col-sm-12").style.pointerEvents = "none";
+    })
+
 
 
 });
