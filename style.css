@@ -253,11 +253,13 @@ h2, label, p {
 }
 
 .credits {
-    position: fixed;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     right: 10px;
     bottom: 10px;
     background: rgba(255, 255, 255, 0.3);
-    max-width: 20vw;
+    max-width: 18vw;
     text-align: left;
     padding: 10px;
     border-radius: 16px;

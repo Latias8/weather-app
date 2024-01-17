@@ -167,7 +167,6 @@
     content: '';
     position: absolute;
     width: 0;
-    height: calc(100% - 44px);
     border-left: 1px solid;
     border-right: 2px solid;
     border-bottom-right-radius: 3px;
@@ -189,7 +188,15 @@
     position: relative;
     display: flex;
     opacity: 1;
-    transition: .2s;
+    transition: 2s;
+    height: 26px;
+    text-align: center;
+}
+
+.alert {
+    text-align: center;
+    align-items: center;
+    transition: 1s;
 }
 
 /**

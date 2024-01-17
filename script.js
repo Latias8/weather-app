@@ -206,8 +206,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.querySelector(".col-sm-12").addEventListener("click", () => {
-        document.querySelector(".col-sm-12").style.opacity = "0";
         document.querySelector(".col-sm-12").style.pointerEvents = "none";
+        document.querySelector(".alert").style.fontSize = "0";
+        document.querySelector(".alert").style.height = "20px";
+        document.querySelector(".col-sm-12").style.opacity = "0";
     })
 
 
