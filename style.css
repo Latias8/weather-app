@@ -201,6 +201,7 @@ h2, label, p {
     transition: .3s;
     max-width: 30vw;
     top: 100px;
+    text-align: center;
 }
 
 #c-but:hover {
@@ -249,4 +250,16 @@ h2, label, p {
     to {
         transform:rotate(20deg);
     }
+}
+
+.credits {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 20vw;
+    text-align: left;
+    padding: 10px;
+    border-radius: 16px;
+    color: white;
 }

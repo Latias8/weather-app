@@ -2,4 +2,20 @@
     .weather-c {
         flex-direction: column;
     }
+    .col-sm-12 {
+        font-size: 10px;
+    }
+    #scroll-content {
+        animation: my-animation 70s linear infinite;
+    }
+    #c-but {
+        font-size: 4vw;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .credits {
+        display: none;
+    }
 }

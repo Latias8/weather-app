@@ -161,8 +161,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     startSite();
-    let nineties = false;
+    let nineties = true;
     let weatherElements = document.querySelectorAll('.weather-c');
+    weatherElements.forEach( (i) => {
+        i.style.cssText = 'text-shadow: 0 0 0 rgba(251, 12, 12, 5), 0px 0 0 rgba(12, 79, 251, 4), 0 0 0 rgba(52, 251, 12, 5) !important; animation: still 4500ms ease infinite !important;';
+        document.body.style.cssText = 'background: linear-gradient(to bottom, #8C52FF, #8C52FF, #8C52FF, #8C52FF) !important; background-size: 100% 4px !important;';
+
+    })
+    document.getElementById("front-filter").style.display = "none"
 
     document.getElementById("c-but").addEventListener("click", () => {
         if (nineties === false) {
