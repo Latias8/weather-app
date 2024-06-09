@@ -19,3 +19,30 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #melody-btn {
+        top: 5px;
+        height: 20px;
+        width: 20px;
+        right: 5px;
+    }
+
+    #melody-btn > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #melody-btn:hover {
+        top: 5px;
+        height: 30px;
+        width: 30px;
+        right: 5px;
+    }
+
+    #melody-btn:hover > img {
+        width: 30px;
+        height: 30px;
+        top: 2px;
+    }
+}
